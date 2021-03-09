@@ -1,3 +1,8 @@
+/*
+* Author: Cassio Seffrin
+* email: cassioseffrin@gmail.com
+*/
+
 import 'package:StreamValidation/registration_bloc.dart';
 import 'package:flutter/material.dart';
 
@@ -10,10 +15,6 @@ class FormPage extends StatefulWidget {
   _FormPageState createState() => _FormPageState();
 }
 
-/*
-* Author: Cassio Seffrin
-* email: cassioseffrin@gmail.com
-*/
 class _FormPageState extends State<FormPage> {
   RegistrationBloc _blocRegistration;
   var _controllerEmail = TextEditingController();
