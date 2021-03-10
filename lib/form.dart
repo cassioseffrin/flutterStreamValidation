@@ -3,8 +3,8 @@
 * email: cassioseffrin@gmail.com
 */
 
-import 'package:StreamValidation/registration_bloc.dart';
 import 'package:flutter/material.dart';
+import 'registration_bloc.dart';
 
 class FormPage extends StatefulWidget {
   FormPage({Key key, this.title}) : super(key: key);

@@ -3,8 +3,9 @@
 * email: cassioseffrin@gmail.com
 */
 
-import 'package:StreamValidation/validate.dart';
 import 'package:rxdart/rxdart.dart';
+
+import 'validate.dart';
 
 class RegistrationBloc with Validation {
   final _email = BehaviorSubject<String>();
