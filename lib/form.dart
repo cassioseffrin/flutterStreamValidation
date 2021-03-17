@@ -55,6 +55,8 @@ class _FormPageState extends State<FormPage> {
                     _blocRegistration.setEmail(value);
                   },
                   textInputAction: TextInputAction.next,
+                  maxLength: 100,
+                  maxLengthEnforced: true,
                   decoration: InputDecoration(
                     errorText: snapshot.error,
                     suffixIcon: _controllerEmail.text.length > 0
@@ -77,6 +79,7 @@ class _FormPageState extends State<FormPage> {
                   _blocRegistration.setPassword(t);
                 },
                 controller: _controllerPassword,
+                maxLength: 10,
                 obscureText: true,
                 decoration: InputDecoration(
                   errorText: snapshot.error,
@@ -98,6 +101,7 @@ class _FormPageState extends State<FormPage> {
             builder: (context, snapshot) {
               return TextField(
                 controller: _controllerConfirmPassword,
+                maxLength: 10,
                 onChanged: (value) {
                   _blocRegistration.setConfirmPassword(value);
                 },
